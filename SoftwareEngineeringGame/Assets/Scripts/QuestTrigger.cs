@@ -8,9 +8,10 @@ public class QuestTrigger : MonoBehaviour {
     public int questNumber;
     public bool startQuest;
     public bool endQuest;
+    
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         theQM = FindObjectOfType<QuestManager>();
 	}
 	
@@ -29,13 +30,18 @@ public class QuestTrigger : MonoBehaviour {
                 {
                     theQM.quests[questNumber].gameObject.SetActive(true);
                     theQM.quests[questNumber].StartQuest();
+                  
+
                 }
 
                 if(endQuest && theQM.quests[questNumber].gameObject.activeSelf)
                 {
                     theQM.quests[questNumber].EndQuest();
+                   
                 }
             }
+            
+           
         }
     }
 }

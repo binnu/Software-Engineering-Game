@@ -6,6 +6,7 @@ public class LoadGame : MonoBehaviour {
 
     public void PlayButton()
     {
+        
         Application.LoadLevel("FirstScreen");
     }
 
@@ -13,6 +14,7 @@ public class LoadGame : MonoBehaviour {
         void Update () {
         if (Input.GetKeyDown(KeyCode.Return))
         {
+           
          PlayButton();
         }
      }

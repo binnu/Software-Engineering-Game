@@ -12,11 +12,14 @@ public class DialogueManager : MonoBehaviour {
     public string[] dialogueLines;
     public int currentLine;
     private PlayerMovement thePlayer;
+    static int count;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         thePlayer = FindObjectOfType<PlayerMovement>();
-	}
+ 
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,7 +36,16 @@ public class DialogueManager : MonoBehaviour {
             dialogActive = false;
             currentLine = 0;
             thePlayer.canMove = true;
+            count++;
+            Debug.Log("count " + count);
         }
+        /*if(count == 10)
+        {
+            count = 0;
+            GameObject.Find("QuitGameButton").SetActive(false);
+            Debug.Log("Game Finished");
+            Application.LoadLevel("GameOver");
+        }*/
 
         dText.text = dialogueLines[currentLine];
     }
@@ -49,5 +61,6 @@ public class DialogueManager : MonoBehaviour {
         dialogActive = true;
         dBox.SetActive(true);
         thePlayer.canMove = false;
+        //Debug.Log("Show Dialogue");
     }
 }

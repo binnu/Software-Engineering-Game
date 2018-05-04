@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Start Menu.unity
     guid: c7a8fed55b534bb4fa37b0438ac715dc
   - enabled: 1
+    path: Assets/Instructions.unity
+    guid: a5182b7ce72b328438ca45baf84f8616
+  - enabled: 1
     path: Assets/FirstScreen.unity
     guid: 31b084801c1797a48bc878a38e923418
   - enabled: 1
     path: Assets/ResultsPage.unity
     guid: fc661c44ec25f1b46a5332545ac47911
+  - enabled: 1
+    path: Assets/GameOver.unity
+    guid: dc08cbceb4c992c46a009a08dea0aed2

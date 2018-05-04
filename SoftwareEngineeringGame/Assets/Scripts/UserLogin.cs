@@ -29,8 +29,8 @@ public class UserLogin : MonoBehaviour {
         if (username != "" && password != "")
         {
             StartCoroutine(CheckUser(username, password));
-            usernameObj.GetComponent<InputField>().text = "";
-            passwordObj.GetComponent<InputField>().text = "";
+            //usernameObj.GetComponent<InputField>().text = "";
+            //passwordObj.GetComponent<InputField>().text = "";
         }
 
     }

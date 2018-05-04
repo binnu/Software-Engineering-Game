@@ -6,22 +6,27 @@ public class Warp : MonoBehaviour {
 
     public Transform warpTarget;
 
+
     IEnumerator OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Object Collided");
-        ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
 
-        Debug.Log("Pre fade out");
+        if (other.gameObject.name == "player")
+        {
+            Debug.Log("Object Collided");
+            //ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
 
-        yield return StartCoroutine(sf.FadeToBlack());
+            // Debug.Log("Pre fade out");
 
-        Debug.Log("Update Player Pos");
+            // yield return StartCoroutine(sf.FadeToBlack());
 
-        other.gameObject.transform.position = warpTarget.position;
-        Camera.main.transform.position = warpTarget.position;
+            Debug.Log("Update Player Pos");
 
-        yield return StartCoroutine(sf.FadeToClear());
+            other.gameObject.transform.position = warpTarget.position;
+            Camera.main.transform.position = warpTarget.position;
 
-        Debug.Log("Fade In Complete");
+            yield return null;
+        }
+
+       // Debug.Log("Fade In Complete");
     }
 }
