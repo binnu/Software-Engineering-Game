@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.75, g: 0.24264707, b: 0.24264707, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1050,7 +1050,7 @@ Prefab:
     - target: {fileID: 224312096495782076, guid: 8bb0c3336c6da884e8ddf136c3eeb057,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224312096495782076, guid: 8bb0c3336c6da884e8ddf136c3eeb057,
         type: 2}
@@ -1060,7 +1060,7 @@ Prefab:
     - target: {fileID: 224312096495782076, guid: 8bb0c3336c6da884e8ddf136c3eeb057,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224312096495782076, guid: 8bb0c3336c6da884e8ddf136c3eeb057,
         type: 2}
