@@ -1,6 +1,7 @@
 WindowsStandalone
 SceneListBegin?
-Assets/Login Menu.unity
+Assets/Login.unity
+Assets/Register.unity
 Assets/Start Menu.unity
 Assets/Instructions.unity
 Assets/FirstScreen.unity
@@ -194,3 +195,4 @@ e86dbf336ac18b366dfbe19ee7f6c4d7 Assembly-CSharp.dll:.ScoreManager
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.TmxObject
 af45fc0948f2c83e76e76fae5a64d81d Assembly-CSharp.dll:.SFXManager
 86e8fc53898814264e32d53a7d3e4b9d Assembly-CSharp.dll:.DialogHolder
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoginRegisterNavigation
