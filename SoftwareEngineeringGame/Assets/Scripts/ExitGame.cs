@@ -6,7 +6,7 @@ public class ExitGame : MonoBehaviour {
 
     public void ExitButton()
     {
-        Application.LoadLevel("Login Menu");
+        Application.LoadLevel("Login");
     }
 
     // Update is called once per frame
