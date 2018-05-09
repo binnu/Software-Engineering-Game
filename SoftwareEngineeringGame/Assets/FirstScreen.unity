@@ -2451,7 +2451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 3
   theQM: {fileID: 782842661}
-  startText: Collect the materials
+  startText: Collect only the relavent materials to score better
   endText: Materials Collected construct the house!
   isItemQuest: 1
   targetItem: materialCollected
@@ -3814,7 +3814,22 @@ Prefab:
     - target: {fileID: 23724361846781566, guid: 7f39272cd44e0d146bd6c35361641d4c,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 23885528596727606, guid: 7f39272cd44e0d146bd6c35361641d4c,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 23724361846781566, guid: 7f39272cd44e0d146bd6c35361641d4c,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1921705823
+      objectReference: {fileID: 0}
+    - target: {fileID: 23724361846781566, guid: 7f39272cd44e0d146bd6c35361641d4c,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f39272cd44e0d146bd6c35361641d4c, type: 2}
@@ -4047,12 +4062,27 @@ Prefab:
     - target: {fileID: 23274580640667778, guid: 4b6e04e70eb3ab24aa96de5ad6e7b2e8,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 23026267669987788, guid: 4b6e04e70eb3ab24aa96de5ad6e7b2e8,
         type: 2}
       propertyPath: m_SortingOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23786875670002390, guid: 4b6e04e70eb3ab24aa96de5ad6e7b2e8,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 23274580640667778, guid: 4b6e04e70eb3ab24aa96de5ad6e7b2e8,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1921705823
+      objectReference: {fileID: 0}
+    - target: {fileID: 23274580640667778, guid: 4b6e04e70eb3ab24aa96de5ad6e7b2e8,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b6e04e70eb3ab24aa96de5ad6e7b2e8, type: 2}
@@ -6008,7 +6038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 6
   theQM: {fileID: 782842661}
-  startText: Contact the family of 4 members to get the requirements
+  startText: Contact the 4 family members to get their requirements of the house
   endText: Done
   isItemQuest: 0
   targetItem: 
@@ -6296,7 +6326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 7
   theQM: {fileID: 782842661}
-  startText: Contact the 4 workers to get the details of materials
+  startText: Contact the 4 workers to know their roles
   endText: Done
   isItemQuest: 0
   targetItem: 
@@ -6347,7 +6377,22 @@ Prefab:
     - target: {fileID: 23876166903004146, guid: 2aad14f564a58db4a8d6586805ecb831,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 23301638795344820, guid: 2aad14f564a58db4a8d6586805ecb831,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 23876166903004146, guid: 2aad14f564a58db4a8d6586805ecb831,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1921705823
+      objectReference: {fileID: 0}
+    - target: {fileID: 23876166903004146, guid: 2aad14f564a58db4a8d6586805ecb831,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2aad14f564a58db4a8d6586805ecb831, type: 2}

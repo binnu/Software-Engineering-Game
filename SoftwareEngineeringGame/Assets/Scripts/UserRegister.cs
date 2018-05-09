@@ -38,18 +38,17 @@ public class UserRegister : MonoBehaviour
         Debug.Log("You have clicked the button!");
         if (username != "" && password != "" && confPassword != "" && semester != "" && studentId != "" && email != "")
         {
-            if (password == confPassword)
-            {
+
                 Debug.Log("inside loop for creating user");
                 Debug.Log("username " + username);
-                StartCoroutine(CreateUser(username, password, semester, studentId, email));
+                StartCoroutine(CreateUser(username, password, confPassword, semester, studentId, email));
                 usernameObj.GetComponent<InputField>().text = "";
                 passwordObj.GetComponent<InputField>().text = "";
                 confPasswordObj.GetComponent<InputField>().text = "";
                 semesterObj.GetComponent<InputField>().text = "";
                 studentIdObj.GetComponent<InputField>().text = "";
                 emailObj.GetComponent<InputField>().text = "";
-            }
+            
         }
     }
 
@@ -95,12 +94,13 @@ public class UserRegister : MonoBehaviour
 
     }
 
-    IEnumerator CreateUser(string username, string password, string semester, string studentId, string email)
+    IEnumerator CreateUser(string username, string password,string confPassword, string semester, string studentId, string email)
     {
         Debug.Log("creating user");
         WWWForm form = new WWWForm();
         form.AddField("username", username);
         form.AddField("password", password);
+        form.AddField("confPassword", confPassword);
         form.AddField("semester", semester);
         form.AddField("studentId", studentId);
         form.AddField("email", email);

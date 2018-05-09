@@ -39,7 +39,7 @@ public class PlayerScoreList : MonoBehaviour
         while (this.transform.childCount > 0)
         {
             Transform c = this.transform.GetChild(0);
-            c.SetParent(null);  // Become Batman
+            c.SetParent(null);  
             Destroy(c.gameObject);
         }
 
